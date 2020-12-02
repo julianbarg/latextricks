@@ -1,0 +1,43 @@
+\documentclass{article}
+
+
+\usepackage{booktabs} % For various lines
+\usepackage{lscape} % For landscape table
+\usepackage{caption}
+\usepackage{xltabular}
+
+\newcolumntype{i}{>{\raggedright\arraybackslash\hangindent=1em}X} % X column with indentation in second row without unnecessary indentation
+
+\captionsetup{
+  % justification = raggedleft,
+  singlelinecheck = false,
+  font = tiny
+} % Left align all captions.
+
+\begin{document}
+
+\begin{landscape}
+	
+	\small
+	\begin{xltabular}{\linewidth}{i i i i i i}
+		\caption{Caption!} \\
+		\toprule
+		Col 1 & Col 2\\
+		\midrule
+
+		text & text\\
+
+		more text & more text\\
+		
+		a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\
+		a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\
+		a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\a&a\\
+
+
+		\bottomrule
+	\caption*{Caption 2}
+	\end{xltabular}
+\end{landscape}
+
+
+\end{document}
