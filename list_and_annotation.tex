@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\usepackage{paracol}
+
+\title{Bullet points with annotation}
+
+\author{Julian Barg}
+
+\begin{document}
+
+	\maketitle
+
+	\begin{paracol}{2}
+	\begin{itemize}
+		\item Item 1
+		\switchcolumn
+		Annotation 1
+		\switchcolumn*
+		% Using * ensures that the content below is horizontally aligned
+
+		\item Item 2
+		\switchcolumn
+		Annotation 2
+		\switchcolumn*
+
+	\end{itemize}
+	\end{paracol}
+
+\end{document}
